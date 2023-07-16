@@ -2,6 +2,8 @@
 
 Projeto SCSS
 
+![Screenshot](img/site-screenshot.jpg)
+
 ## Descrição
 
 Este projeto é uma landing page responsiva criada utilizando SCSS e seguindo padrões semânticos. A página foi desenvolvida de forma organizada e modular, permitindo uma fácil manutenção e escalabilidade.
