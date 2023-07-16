@@ -1,3 +1,90 @@
-button {
-  @include style-btn(5.4rem, $yellow, $purple);
+.s-hero {
+  background-color: $purple;
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+  .container {
+    @include flex(row, flex-start, space-between);
+  }
+  .text {
+    width: 100%;
+    max-width: 55rem;
+    h1 {
+      color: $white;
+      font-family: "PT Sans", sans-serif;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 120%; /* 57.6px */
+      margin-bottom: 1.6rem;
+    }
+    p {
+      color: $white;
+      font-size: 1.8rem;
+      line-height: 150%; /* 27px */
+      width: 100%;
+      max-width: 48.8rem;
+      margin-bottom: 3.2rem;
+    }
+    button {
+      @include style-btn(5.4rem, $yellow, #503387);
+      margin-bottom: 8.6rem;
+    }
+    .conheca {
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 4.2rem;
+        height: 4.2rem;
+        background-color: rgba(123, 90, 186, 0.4);
+        border-radius: 6px;
+        @include flex(row, center, center);
+      }
+      span {
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        font-weight: bold;
+        margin-left: 1.6rem;
+      }
+    }
+  }
+  .image {
+    position: relative;
+    top: 3.4rem;
+  }
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+    }
+    .text {
+      max-width: 100%;
+      margin-bottom: 3rem;
+      h1 {
+        text-align: center;
+      }
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+      .conheca {
+        justify-content: center;
+      }
+    }
+  }
+  @include responsive(600px) {
+    padding-top: 2.5rem;
+    margin-top: 8rem;
+    .text {
+      h1 {
+        font-size: 4.3rem;
+      }
+    }
+    .image {
+      left: -9px;
+    }
+  }
 }
